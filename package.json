@@ -1,0 +1,36 @@
+{
+  "name": "@elastoscarrier-protocol/early-ts-sdk",
+  "version": "0.0.1",
+  "description": "Early Javascript/Typescript SDK implementation for Elastos Carrier components features",
+  "scripts": {
+    "rollup": "rm -Rf ./dist/* && rollup -c",
+    "test": "jest"
+  },
+  "keywords": [
+    "elastos",
+    "web3",
+    "carrier"
+  ],
+  "author": "",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/open-zhy",
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@types/jest": "^28.1.2",
+    "jest": "^28.1.1",
+    "rollup": "^2.75.7",
+    "rollup-plugin-dts": "^4.2.2",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
